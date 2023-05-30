@@ -5,10 +5,12 @@ require_once 'database/db_connection.php';
 $success_msg = '';
 ?>
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 <body>
   <?php require_once 'include/navbar.php'; ?>
+  <?php require_once 'include/sidebar.php'; ?>
 
   <div class="container">
     <?php if (isset($_SESSION['success_msg'])) : ?>

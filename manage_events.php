@@ -9,10 +9,12 @@ $retrieve = mysqli_query($conn, "SELECT * FROM events");
 
 <?php require_once 'include/head.php'; ?>
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 <body>
    <?php require_once 'include/navbar.php'; ?>
+   <?php require_once 'include/sidebar.php'; ?>
 
    <?php
    if (mysqli_num_rows($retrieve) > 0) {
@@ -53,7 +55,6 @@ $retrieve = mysqli_query($conn, "SELECT * FROM events");
                             <td colspan="">
                                 <a href="updatecustomer.php?event_id=<?php echo $result["event_id"]; ?>" type="submit" class="btn btn-primary"><i class="fas fa-pencil-alt"></i> Edit</a>
                                 <a href="app/deleteevent.php?event_id=<?php echo $result["event_id"]; ?>" type="submit" class="btn btn-danger"><i class="fas fa-trash"></i> Delete</a>
-                                <a href="pdf_singlecustomer.php?event_id=<?php echo $result['event_id']; ?>" type="submit" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Print</a>
                             </td>
                         </tr>
                     </tbody>

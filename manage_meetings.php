@@ -9,10 +9,12 @@ $retrieve = mysqli_query($conn, "SELECT * FROM meetings");
 
 <?php require_once 'include/head.php'; ?>
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 <body>
    <?php require_once 'include/navbar.php'; ?>
+   <?php require_once 'include/sidebar.php'; ?>
 
    <?php
    if (mysqli_num_rows($retrieve) > 0) {

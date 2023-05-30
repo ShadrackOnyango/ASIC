@@ -1,4 +1,4 @@
-<header class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+<header class="navbar navbar-expand-lg navbar-dark bg-info sticky-top">
   <a class="navbar-brand me-0 px-3" href="dashboard.php">Aloys Shyachi Investment Club</a>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>

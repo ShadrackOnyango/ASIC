@@ -10,10 +10,12 @@ $costant = '';
 
 ?>
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 <body>
   <?php require_once 'include/navbar.php'; ?>
+  <?php require_once 'include/sidebar.php'; ?>
 
   <div class="alert alert-success alert-dismissible fade show " role="alert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">

@@ -61,7 +61,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registration</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   
 </head>
 
 <body>
@@ -75,8 +77,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
             <form method="POST" action="register.php" autocomplete="off">
               <div class="form-group">
-                <label for="username">Full Name</label>
-                <input type="text" class="form-control" id="username" name="username" placeholder="Enter Full Name" required>
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Enter Username" required>
               </div>
               <div class="form-group">
                 <label for="password">Password</label>
@@ -95,6 +97,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </select>
               </div>
               <div class="text-center">
+               <p class="text-center mt-3">Already a member? <a href="login.php">Sign In</a></p>
                 <button type="submit" class="btn btn-primary">Register</button>
               </div>
             </form>

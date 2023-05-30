@@ -35,8 +35,8 @@ if (isset($_SESSION['user_id'])) {
         <h3 class="card-title text-center">Login</h3>
         <form action="app/loginHandler.php" method="post" autocomplete="off"><br>
           <div class="form-group">
-            <label for="uname">Full Name</label>
-            <input type="text" class="form-control" id="uname" name="uname" placeholder="Enter Full Name" required>
+            <label for="uname">Username</label>
+            <input type="text" class="form-control" id="uname" name="uname" placeholder="Enter Username" required>
           </div>
           <div class="form-group">
             <label for="psw">Password</label>

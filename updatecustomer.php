@@ -34,7 +34,8 @@ if (isset($_GET['user_id'])) {
 }
 ?>
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 <body>
     <?php require_once 'include/navbar.php'; ?>
@@ -51,23 +52,23 @@ if (isset($_GET['user_id'])) {
     <form action="" method="post" autocomplete="off">
         <div class="row">
         <div class="col-md-12 col-sm-4">
-  <div class="form-group">
-    <label for="">User ID</label>
-    <select class="custom-select" name="user_id" id="" value="<?php echo $query['user_id']; ?>">
-      <?php
-       $result = mysqli_query($conn, "SELECT user_id, username FROM users");
-       ?>
-       <?php
-       while ($row = mysqli_fetch_assoc($result)) {
-       ?>
-      <option disabled><?php echo $row['username']; ?></option>
-      <option value="<?php echo $row['user_id']; ?>" <?php if (isset($query['user_id']) && $query['user_id'] == $row['user_id']) { echo 'selected'; } ?>>
-      <?php echo $row['user_id']; ?>
-      </option>
-      <?php }?>
-    </select>
-  </div>
-</div>
+            <div class="form-group">
+                <label for="">User ID</label>
+                <select class="custom-select" name="user_id" id="" value="<?php echo $query['user_id']; ?>">
+                <?php
+                $result = mysqli_query($conn, "SELECT user_id, username FROM users");
+                ?>
+                <?php
+                while ($row = mysqli_fetch_assoc($result)) {
+                ?>
+                <option disabled><?php echo $row['username']; ?></option>
+                <option value="<?php echo $row['user_id']; ?>" <?php if (isset($query['user_id']) && $query['user_id'] == $row['user_id']) { echo 'selected'; } ?>>
+                <?php echo $row['user_id']; ?>
+                </option>
+                <?php }?>
+                </select>
+            </div>
+        </div>
 
 
             <div class="col-md-6 col-sm-4">

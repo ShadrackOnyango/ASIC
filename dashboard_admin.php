@@ -66,7 +66,7 @@ $totalContribution = $row['totalContribution'];
                 <div class="icon">
                   <i class="fas fa-user"></i>
                 </div>
-                <a href="manage_users.php" class="small-box-footer">Manage <i class="fas fa-arrow-circle-right"></i></a>
+                <a href="#" class="small-box-footer">Manage <i class="fas fa-arrow-circle-right"></i></a>
               </div>
             </div>
             <!-- ./col -->
@@ -87,7 +87,7 @@ $totalContribution = $row['totalContribution'];
                 <div class="icon">
                   <i class="fas fa-users"></i>
                 </div>
-                <a href="manage_user_accounts.php" class="small-box-footer">Manage <i class="fas fa-arrow-circle-right"></i></a>
+                <a href="#" class="small-box-footer">Manage <i class="fas fa-arrow-circle-right"></i></a>
               </div>
             </div>
             <!-- ./col -->

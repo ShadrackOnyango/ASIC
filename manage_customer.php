@@ -16,6 +16,7 @@ $retrieve = mysqli_query($conn, "SELECT * FROM users ORDER BY registration_date 
 
 <body>
    <?php require_once 'include/navbar.php'; ?>
+   <?php require_once 'include/sidebar.php'; ?>
 
    <?php
    if (mysqli_num_rows($retrieve) > 0) {
@@ -55,7 +56,7 @@ $retrieve = mysqli_query($conn, "SELECT * FROM users ORDER BY registration_date 
                            <div class="d-flex justify-content-between">
                               <a href="updatecustomer.php?user_id=<?php echo $result["user_id"]; ?>" class="btn btn-primary"><i class="fas fa-pencil-alt"></i> Edit</a>
                               <a href="app/deletecustomer.php?username=<?php echo $result["username"]; ?>" class="btn btn-danger"><i class="fas fa-trash"></i> Delete</a>
-                              <a href="pdfcustomer.php?user_id=<?php echo $result['user_id']; ?>" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Print</a>
+
                            </div>
                         </td>
                      </tr>

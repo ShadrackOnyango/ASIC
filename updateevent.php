@@ -4,6 +4,9 @@ require_once 'include/head.php';
 require_once 'database/db_connection.php';
 $success_msg = '';
 
+
+
+
 // Update event detail
 if (count($_POST) > 0) {
     mysqli_query($conn, "UPDATE events SET
@@ -33,7 +36,8 @@ if (isset($_GET['event_id'])) {
 }
 ?>
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 <body>
     <?php require_once 'include/navbar.php'; ?>
